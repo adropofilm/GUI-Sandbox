@@ -1,11 +1,16 @@
 import javax.swing.*;
 import java.awt.event.*; // ActionListener and ActionEvent are in here ;)
 
-public class SimpleGui implements ActionListener {
+/*
+ * GUI with frame
+ */
+
+
+public class GuiFrame implements ActionListener { 
 	JButton button;
 	
 	public static void main(String[] args) {
-		SimpleGui gui = new SimpleGui();
+		GuiFrame gui = new GuiFrame();
 		gui.go();
 	}
 	
