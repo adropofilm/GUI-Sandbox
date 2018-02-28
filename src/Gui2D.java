@@ -6,21 +6,22 @@ import javax.swing.*;
  */
 
 public class Gui2D extends JPanel {
+	static Gui2D panel;
+	
 	  public static void main(String args[]) {
-		  Gui2D panel = new Gui2D();
+		  panel = new Gui2D();
 		  panel.go();
 	  }
 	  
 	  public void go() {
-		  	JFrame frame = new JFrame("draw panel");
-		  	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		  	Gui2D panel = new Gui2D();
+		  
+		  JFrame frame = new JFrame("draw panel");
+		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    
-		  	frame.add(panel);
-		
-		  	frame.setSize(300, 200);
-		  	frame.setVisible(true);
+		  frame.add(panel);
+	
+		  frame.setSize(300, 200);
+		  frame.setVisible(true);
 	  }
 	  
 	  public void paintComponent (Graphics g) {
