@@ -2,8 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DancingAnimation {
-	int yCoord = 70;
-	int xCoord = 70;
+	int yCoord = 0;
+	int xCoord = 0;
 	
 	public static void main(String[] args) {
 		DancingAnimation gui = new DancingAnimation();
@@ -17,7 +17,7 @@ public class DancingAnimation {
 		dancerImage dancer = new dancerImage();
 		
 		frame.getContentPane().add(dancer);
-		frame.setSize(900, 800);
+		frame.setSize(700, 700);
 		frame.setVisible(true);
 		
 		// Animate via loop:
@@ -38,6 +38,4 @@ public class DancingAnimation {
 		}
 		
 	}
-
-	
 }
