@@ -28,10 +28,6 @@ public class Gui2D extends JPanel {
 		  g.fillOval(50,  50,  100, 100);
 	  }
 	  
-	  public void paint( Graphics g) {
-		  g.setColor(Color.blue);
-		  g.fillOval(50,  50,  100, 100);
-	  }
 }
 
 
